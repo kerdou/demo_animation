@@ -1,0 +1,107 @@
+body {
+  background-color: #88c7cc;
+}
+
+header {
+  text-align: center;
+  color: white;
+}
+
+#popup {
+	position: absolute;
+	top: 315px;
+	left: 50%;
+	width: 300px;
+	height: 150px;
+	z-index: 10;
+	text-align: center;
+	background-color: #944dff;
+	transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+  border-radius: 15px;
+  color: white;
+}
+
+#popup h1 {
+  margin: 10px 0;
+}
+
+#popup input {
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+#container {
+  opacity: 0.2;
+  font-family: arial;
+  max-width: 1024px;
+  min-width: 401px;
+  margin:auto;  
+}
+
+#skybox{
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  background-image: url(img/ciel.png);
+  overflow: hidden;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+#deathcount{
+  position: absolute;
+  margin: 0;
+  right: 5px;
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  border: 0px;
+  background-color: transparent;
+  text-align: right;
+  width: 60px;
+}
+
+#tornado{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 200px;
+}
+
+#missile{
+  position: absolute;
+  transform: translateY(-50%);
+  right: -150px;
+}
+
+.opazero {
+  opacity: 0;
+}
+
+.opafull {
+  opacity: 1;
+}
+
+/* ajout d'une classe qui appelle une animation */ 
+.clignote {
+   -webkit-animation:clignote 0.1s 5;
+   animation:clignote 0.1s 5;
+}
+@-webkit-keyframes clignote {
+    to {
+        opacity:0.2;
+    }
+}
+@keyframes clignote {
+    to {
+        opacity:0.2;
+    }
+}

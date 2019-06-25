@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Break! Break! Break!</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async src="script.js"></script>
+</head>
+
+<body>
+    <audio id="boom" src="snd/beep.mp3"></audio>
+    <audio src="snd/doh.mp3"></audio>
+    <div id="overcontainer">
+        <div id="popup">                            
+            <h1>Ready?</h1>
+            <p>Utilisez <i class="fas fa-caret-square-up"></i> et <i class="fas fa-caret-square-down"></i> pour éviter les missiles</p>
+            <input type="button" id="gobutton" name="" value="Go!">
+        </div>
+
+        <div id="container">
+            <header>
+                <h1>Break! Break! Break!</h1>
+                <p>Utilisez <i class="fas fa-caret-square-up"></i> et <i class="fas fa-caret-square-down"></i> pour éviter les missiles</p>
+            </header>
+            <div id="skybox">
+                <input id="deathcount" value="0">
+                <img id="tornado" src="img/plane.png">
+                <img id="missile" src="img/rocket.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
