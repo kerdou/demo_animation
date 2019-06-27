@@ -1,6 +1,6 @@
 
-// firefox émpeche de jouer automatiquement des sans que le user ait cliqué au moins une fois sur la fenetre
-// pour contrer ça je fais poper une boite modale à cliquer qui déclenche tout le reste
+// firefox empêche de jouer automatiquement des sons avant que le user ait cliqué au moins une fois sur la fenêtre
+// pour contrer ce problème je fais popper une boite modale à cliquer qui déclenche tout le reste
 var go = document.getElementById("gobutton").addEventListener("click", launcher);
 
 // disparition de la boite modale
@@ -48,7 +48,7 @@ function tornado() {
         key = null; // pas d'enregistrement pour key si aucune touche n'est enfoncée
     });
 
-    setInterval(tornaMove, 16); //rafraichissement du déplacement de l'avion
+    setInterval(tornaMove, 16); //rafraichissement du déplacement de l'avion, définit sa vitesse de déplacement
 
     function tornaMove() {
         var tornaVertiPos = parseInt($('#tornado').css('top')); // récupération du top de l'emplacement de l'avion
@@ -67,7 +67,7 @@ function tornado() {
 
 // test de collision entre l'avion et le missile
 function collision() {
-    setInterval(collitest, 20); // rafraichissement du test de collision 
+    setInterval(collitest, 20); // rafraichissement du test de collision, définit sa vitesse de déplacement
 
     function collitest() {
         var topGap = 0; // écart entre le tornaTop et le missiTop
