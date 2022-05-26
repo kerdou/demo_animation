@@ -1,4 +1,4 @@
-**<h1 align="center">JavaScript form exercise</h1>**
+**<h1 align="center">Animation and jQuery exercise</h1>**
 
 <div align="center">
 
