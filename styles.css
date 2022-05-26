@@ -1,4 +1,5 @@
 body {
+  font-family: 'impact';
   background-color: #88c7cc;
 }
 
@@ -15,21 +16,25 @@ header {
 	height: 150px;
 	z-index: 10;
 	text-align: center;
-	background-color: #944dff;
+	background-color: #122678;
 	transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
 	-o-transform: translateX(-50%) translateY(-50%);
   border-radius: 15px;
+  border: 3px solid white;
   color: white;
 }
 
 #popup h1 {
   margin: 10px 0;
+  font-weight: normal;
+  letter-spacing: 3px;
 }
 
-#popup input {
+#popup #gobutton {
+  cursor: pointer;
   color: white;
   font-weight: bold;
   font-size: 26px;
@@ -43,10 +48,10 @@ header {
   font-family: arial;
   max-width: 1024px;
   min-width: 401px;
-  margin:auto;  
+  margin:auto;
 }
 
-#skybox{
+#skybox {
   position: relative;
   margin: auto;
   width: 400px;
@@ -57,7 +62,7 @@ header {
   border-radius: 15px;
 }
 
-#deathcount{
+#deathcount {
   position: absolute;
   margin: 0;
   right: 5px;
@@ -70,13 +75,13 @@ header {
   width: 60px;
 }
 
-#tornado{
+#tornado {
   position: absolute;
   transform: translateY(-50%);
   top: 200px;
 }
 
-#missile{
+#missile {
   position: absolute;
   transform: translateY(-50%);
   right: -150px;
@@ -90,7 +95,7 @@ header {
   opacity: 1;
 }
 
-/* ajout d'une classe qui appelle une animation */ 
+/* ajout d'une classe qui appelle une animation */
 .clignote {
    -webkit-animation:clignote 0.1s 5;
    animation:clignote 0.1s 5;
