@@ -28,4 +28,4 @@
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kerdou](https://www.linkedin.com/in/gautier-le-hir-78796515b/) - Idea & Initial work. [Portfolio](https://kerdapp.ddns.net/)
+- [@kerdou](https://www.linkedin.com/in/gautier-le-hir-78796515b/) - [Portfolio](https://kerdapp.ddns.net/)
